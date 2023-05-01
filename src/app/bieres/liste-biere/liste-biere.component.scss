@@ -1,0 +1,44 @@
+:host{
+    display: flex;
+    margin: 2em auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+app-produit{
+
+    margin-top: 16px;
+}
+
+h2{
+    color: white;
+}
+#actions>*{
+    margin: 8px 8px;
+    padding-top: 5px;
+}
+
+tr{
+    vertical-align: middle;
+}
+
+.imageBiere{
+    width: 50px;
+    margin-top: 5px;
+}
+
+#table{
+    min-width: fit-content;
+    margin: 0 auto;
+}
+
+.mdc-data-table__cell, .mdc-data-table__header-cell{
+    padding: 0 1vw;
+}
+
+@media screen and (min-width:720px) {
+    .mdc-data-table__cell, .mdc-data-table__header-cell{
+        padding: 0 3vw;
+    }
+}
+}

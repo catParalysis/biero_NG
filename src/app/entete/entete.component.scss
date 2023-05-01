@@ -1,0 +1,17 @@
+:host{
+    display: flex;
+    padding: 0px;
+    width: 100%;
+}
+
+.mat-toolbar-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo{
+    padding-top: 12px;
+    padding-left: 35px;
+    width: 100px;
+    margin-right: 50px;
+}

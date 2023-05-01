@@ -1,0 +1,34 @@
+:host{
+    background-color: black;
+    min-height: 100vh;
+}
+
+.ng-star-inserted{
+    background-color: black;
+    margin: 0;
+    border-color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 75vw;
+    margin: 0 auto;
+    margin-top: 25px;
+    caret-color: white;
+
+}
+legend{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.fields{
+    margin-bottom: 25px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

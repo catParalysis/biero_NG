@@ -1,0 +1,30 @@
+
+<ng-container *ngIf="formAjout">
+    <fieldset>
+      <form [formGroup]="formAjout" >
+        <legend>Renseignements sur la bière</legend>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Nom : </mat-label>
+          <input matInput formControlName="nom" />
+        </mat-form-field>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Brasserie : </mat-label>
+          <input matInput formControlName="brasserie" />
+        </mat-form-field>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Description : </mat-label>
+          <input class="description-field" matInput formControlName="description" />
+        </mat-form-field>
+        <legend>Images</legend>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Image (URL) : </mat-label>
+          <input matInput formControlName="image" />
+        </mat-form-field>
+        <div class="buttons">
+            <div>
+              <button mat-raised-button (click)="ajoutBiere()" [disabled]="!formAjout.dirty || !formAjout.valid" color="primary" >Submit</button>
+            </div>
+        </div>
+      </form>
+    </fieldset>
+  </ng-container>

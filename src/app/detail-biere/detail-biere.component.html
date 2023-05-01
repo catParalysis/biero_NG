@@ -1,0 +1,35 @@
+<ng-container *ngIf="formModification">
+    <fieldset>
+      <form [formGroup]="formModification" >
+        <legend>Informations de base</legend>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Nom : </mat-label>
+          <input matInput formControlName="nom" />
+        </mat-form-field>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Brasserie : </mat-label>
+          <input matInput formControlName="brasserie" />
+        </mat-form-field>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Description : </mat-label>
+          <input matInput formControlName="description" />
+        </mat-form-field>
+        <legend>Images</legend>
+        <mat-form-field class="fields" appearance="outline">
+          <mat-label>Image (URL) : </mat-label>
+          <input matInput formControlName="image" />
+        </mat-form-field>
+        <div class="buttons">
+            <div>
+              <button mat-raised-button [disabled]="formModification.pristine" (click)="annuler()" >Annuler</button>
+              <button mat-raised-button [disabled]="!formModification.dirty || !formModification.valid" color="primary" (click)="submit()" >Submit</button>
+            </div>
+            <div>
+              <button mat-mini-fab (click)="openConfirmationDialog()">
+                <mat-icon>delete_outline</mat-icon>
+              </button>
+            </div>
+        </div>
+      </form>
+    </fieldset>
+  </ng-container>
